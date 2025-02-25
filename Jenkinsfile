@@ -11,10 +11,17 @@ git 'https://github.com/kishore-2025/demo2_rep.git'
 }
 stage('build')
 {
-steps(
+steps{
 sh 'javac hello.java'
 }
 }
+  stage('run')
+  {
+    steps{
+      sh 'hello java'
+    }
+    
+  }
 }
 }
 
